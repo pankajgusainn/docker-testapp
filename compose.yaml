@@ -8,6 +8,7 @@ services:
   environment:
    MONGO_INITDB_ROOT_USERNAME: admin
    MONGO_INITDB_ROOT_PASSWORD: qwerty
+   GLIBC_TUNABLES: glibc.pthread.rseq=1   
 
  mongo-express:
   image: mongo-express
